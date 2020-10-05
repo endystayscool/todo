@@ -1,9 +1,14 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,14 +19,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem 0;
 }
 
 .App-link {
@@ -35,4 +37,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.delete {
+  float: right;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: white;
+}
+.card-body {
+  border-bottom: 10px solid #61DBFB;
+}
+
+p {
+  color: white;
 }
