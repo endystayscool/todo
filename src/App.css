@@ -1,4 +1,4 @@
-.App {
+/* .App {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -82,4 +82,77 @@ body {
 }
 p {
   color: white;
+} */
+
+body {
+  background-color: #282c34;
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
+
+.wrapper  {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* top: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 50%;
+  top: 120px;
+  position: relative;
+  margin: 1rem;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  background: blue;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.App-navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  background: black;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.navname {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
